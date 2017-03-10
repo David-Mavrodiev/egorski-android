@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_check_signal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.dsm2001.e_gorski.CheckSignalActivity">
+    <FrameLayout
+        android:id="@+id/container_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:text="Провери"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/GreenTitle"/>
+    <LinearLayout
+        android:id="@+id/check_signal_form"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp">
+        <EditText
+            android:hint="Входящ номер"
+            android:id="@+id/et_register_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Input" />
+        <Button
+            android:text="Провери"
+            android:id="@+id/check_signal_btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Colored"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/show_signal_answer"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="#600006"
+            android:id="@+id/text_answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
